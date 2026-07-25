@@ -382,3 +382,38 @@ footer .footer-info .content2 span {
     color: black;
     font-size: 15px;
 }
+
+/* Trạng thái ban đầu - ẩn */
+.fade-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+/* Khi xuất hiện - hiện lên */
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Trượt từ trái */
+.fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 3s ease;
+}
+.fade-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Trượt từ phải */
+.fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 3s ease;
+}
+.fade-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
