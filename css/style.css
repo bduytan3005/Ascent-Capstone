@@ -110,7 +110,8 @@ footer .footer-info .content2 span {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 80px;
+    padding-top: 200px;
+    
 }
 
 .connected .connected-content {
@@ -120,14 +121,39 @@ footer .footer-info .content2 span {
     gap: 150px;
 }
 
-.connected .connected-content .connected-img img{
-    
-    background-image: url(../img/bg-student);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain ;
-    margin: 0 ;
-    min-height: 500px;
+.connected .connected-content .connected-img {
+    position: relative;
+}
+
+.connected .connected-content .connected-img .bg-student {
+    width: 100%;
+    height: auto;
+    display: block;    
+    animation: swing 1.5s infinite;
+
+}
+
+.connected .connected-content .connected-img .student {
+    position: absolute;
+    bottom: 0;    
+    left: 50%;
+    transform: translateX(50%);
+    width: 65%;   
+    animation: swings 1.5s  infinite;
+}
+
+@keyframes swing {
+    0%   { transform: translateX(-10%); }      /* giữa */
+    25%  { transform: translateX(-10%); }      /* sang trái */
+    75%  { transform: translateX(-12%); }      /* sang phải */
+    100% {transform: translateX(-10%);}      /* về giữa */
+}
+
+@keyframes swings {
+    0%   { transform: translateX(-70%); }      /* giữa */
+    25%  { transform: translateX(-70%); }      /* sang trái */
+    75%  { transform: translateX(-72%); }      /* sang phải */
+    100% {transform: translateX(-70%);}      /* về giữa */
 }
 
 .connected .connected-content .email-item {
@@ -150,7 +176,7 @@ footer .footer-info .content2 span {
     right: 0;
     top: 0;
     transform: translateY(35px);
-    background-color: #F7941E; 
+    background-color: #F7941E;
     border: none;
     color: white;
     overflow: hidden;
@@ -167,7 +193,7 @@ footer .footer-info .content2 span {
     width: 100%;
     height: 100%;
     background-color: #1CBBB4;
-    transition: left 0.8s ;
+    transition: left 0.8s;
     z-index: -1;
 }
 
