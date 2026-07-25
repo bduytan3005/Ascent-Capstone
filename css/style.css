@@ -18,6 +18,196 @@
 .head-content {
     font-size: 28px;
     font-weight: 800;
+    font-family: "Jost", sans-serif;
+}
+
+/* BLOG */
+
+.blog {
+    background-image: linear-gradient(to top, #ffffff 30%, #fff1e6 70%);
+}
+
+.blog .blog-content {}
+
+.blog .blog-content .blog-text {
+    padding: 60px 0;
+}
+
+.blog .blog-content .blog-item {
+    display: flex;
+    gap: 20px;
+}
+
+.blog .blog-content .blog-left .card-body span {
+    font-size: 12px;
+    color: #686868;
+    margin-right: 30px;
+}
+
+.blog .blog-content .blog-right .card-body span {
+    font-size: 12px;
+    color: #686868;
+    margin-right: 30px;
+}
+
+
+.blog .blog-content .blog-item .blog-left .card {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow:
+        0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.blog .blog-content .blog-item .blog-right .card {
+    border-radius: 10px;
+    border: none;
+    padding-bottom: 10px;
+    box-shadow:
+        0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.blog .blog-content .blog-left .card-body  a,
+.blog .blog-content .blog-right .card-body  a {
+    font-family: "Jost", sans-serif;
+    color: black;
+    transition: all 0.5s;
+}
+
+.blog .blog-content .blog-left .card-body h4,
+.blog .blog-content .blog-right .card-body h4 {
+    padding: 35px 0px;
+}
+
+.blog .blog-content .blog-left .card-body a:hover,.blog .blog-content .blog-right .card-body a:hover{
+    color: #1CBBB4;
+}
+
+
+
+
+
+
+
+/* CONNECTED */
+
+.connected {
+    background-image: url(../img/bg-connected.png), linear-gradient(to bottom, #ffffff 30%, #d6edb0 100%);
+    ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 200px;
+
+}
+
+.connected .connected-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.connected .connected-content .connected-img {
+    position: relative;
+}
+
+.connected .connected-content .connected-img .bg-student {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: swing 1.5s infinite;
+
+}
+
+.connected .connected-content .connected-img .student {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%);
+    width: 65%;
+    animation: swings 1.5s infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    25% {
+        transform: translateX(-10%);
+    }
+
+    75% {
+        transform: translateX(-12%);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes swings {
+    0% {
+        transform: translateX(-70%);
+    }
+
+    25% {
+        transform: translateX(-70%);
+    }
+
+    75% {
+        transform: translateX(-72%);
+    }
+
+    100% {
+        transform: translateX(-70%);
+    }
+}
+
+.connected .connected-content .email-item {
+    padding-top: 30px;
+    position: relative;
+
+}
+
+.connected .connected-content .email-item input {
+    padding: 20px 250px 20px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.connected .connected-content .email-item .button {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(35px);
+    background-color: #F7941E;
+    border: none;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+}
+
+.connected-content .email-item .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #1CBBB4;
+    transition: left 0.8s;
+    z-index: -1;
+}
+
+.connected-content .email-item .button:hover::before {
+    left: 0;
 }
 
 /* FOOTER */
@@ -100,103 +290,4 @@ footer .footer-info .content2 span {
     margin-left: 20px;
     color: black;
     font-size: 15px;
-}
-
-/* CONNECTED */
-
-.connected {
-    background-image: url(../img/bg-connected.png), linear-gradient(to bottom, #ffffff 30%, #d6edb0 100%);
-    ;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 200px;
-    
-}
-
-.connected .connected-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-}
-
-.connected .connected-content .connected-img {
-    position: relative;
-}
-
-.connected .connected-content .connected-img .bg-student {
-    width: 100%;
-    height: auto;
-    display: block;    
-    animation: swing 1.5s infinite;
-
-}
-
-.connected .connected-content .connected-img .student {
-    position: absolute;
-    bottom: 0;    
-    left: 50%;
-    transform: translateX(50%);
-    width: 65%;   
-    animation: swings 1.5s  infinite;
-}
-
-@keyframes swing {
-    0%   { transform: translateX(-10%); }      
-    25%  { transform: translateX(-10%); }     
-    75%  { transform: translateX(-12%); }      
-    100% {transform: translateX(-10%);}      
-}
-
-@keyframes swings {
-    0%   { transform: translateX(-70%); }     
-    25%  { transform: translateX(-70%); }      
-    75%  { transform: translateX(-72%); }      
-    100% {transform: translateX(-70%);}      
-}
-
-.connected .connected-content .email-item {
-    padding-top: 30px;
-    position: relative;
-
-}
-
-.connected .connected-content .email-item input {
-    padding: 20px 250px 20px 10px;
-    border-radius: 5px;
-    border: 1px solid;
-}
-
-.connected .connected-content .email-item .button {
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 15px 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateY(35px);
-    background-color: #F7941E;
-    border: none;
-    color: white;
-    overflow: hidden;
-    z-index: 1;
-    display: inline-flex;
-    align-items: center;
-}
-
-.connected-content .email-item .button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #1CBBB4;
-    transition: left 0.8s;
-    z-index: -1;
-}
-
-.connected-content .email-item .button:hover::before {
-    left: 0;
 }
