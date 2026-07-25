@@ -143,17 +143,17 @@ footer .footer-info .content2 span {
 }
 
 @keyframes swing {
-    0%   { transform: translateX(-10%); }      /* giữa */
-    25%  { transform: translateX(-10%); }      /* sang trái */
-    75%  { transform: translateX(-12%); }      /* sang phải */
-    100% {transform: translateX(-10%);}      /* về giữa */
+    0%   { transform: translateX(-10%); }      
+    25%  { transform: translateX(-10%); }     
+    75%  { transform: translateX(-12%); }     
+    100% {transform: translateX(-10%);}     
 }
 
 @keyframes swings {
-    0%   { transform: translateX(-70%); }      /* giữa */
-    25%  { transform: translateX(-70%); }      /* sang trái */
-    75%  { transform: translateX(-72%); }      /* sang phải */
-    100% {transform: translateX(-70%);}      /* về giữa */
+    0%   { transform: translateX(-70%); }    
+    25%  { transform: translateX(-70%); }   
+    75%  { transform: translateX(-72%); }     
+    100% {transform: translateX(-70%);}    
 }
 
 .connected .connected-content .email-item {
