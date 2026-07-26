@@ -37,6 +37,56 @@
     </header>
     <main>
 
+        <!-- KNOWLEDGE -->
+         <section class="knowledge">
+            <div class="container">
+                <div class="knowledge-content">
+                    <img class="know-img1" src="./img/img1-knowledge.png" alt="">
+                    <img class="know-img2" src="./img/knowledge-animal.png" alt="">
+                    <div class="know-text">
+                        <p class="text-content fade-up" style="transition-duration: 1s;">Student knowledge</p>
+                        <h2 class="head-content fade-up" style="transition-delay: 0.5s;">Knowledge for All learn design Excellence for Everyone</h2>
+                        <p class="fade-up" style="transition-delay: 0.5s;" >Lorem ipsum dolor sit amet consectetur adipiscing elit platea the osr of a proin mollis pretium facilisi in, ligula volutpat</p>
+                        <a
+                            name=""
+                            id=""
+                            class="btn btn-primary"
+                            href="#"
+                            role="button"
+                            >Learn More</a
+                        >
+                        
+                    </div>
+                    <div class="know-item">
+                        <div class="age-item item1">
+                                <p>1-2</p>
+                                <p>Years</p>
+                        </div>
+                        <div class="age-item item2">
+                                <p>3-5</p>
+                                <p>Years</p>
+                        </div>
+                        <div class="age-item item3">
+                                <p>6-8</p>
+                                <p>Years</p>
+                        </div>
+                        <div class="age-item item4">
+                                <p>9-11</p>
+                                <p>Years</p>
+                        </div>
+                        <div class="age-item item5">
+                                <p>12-15</p>
+                                <p>Years</p>
+                        </div>
+                        <div class="age-item item6">
+                                <p>16-18</p>
+                                <p>Years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
         <!-- CLIENTS -->
         <section class="client">
             <div class="container">
@@ -311,6 +361,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+        // SPWIPER
         const swiper = new Swiper('#clientSwiper', {
             loop: true,
             grabCursor: true,
@@ -324,6 +375,7 @@
             },
         });
 
+        // ANIMATION
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

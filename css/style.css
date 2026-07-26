@@ -21,6 +21,133 @@
     font-family: "Jost", sans-serif;
 }
 
+/* KNOWLEDGE */
+
+.knowledge {
+    background-color: #fff0e5;
+    padding: 100px 0;
+    position: relative;
+
+}
+
+.knowledge .knowledge-content .know-text {
+    padding: 100px 0;
+    align-items: center;
+}
+
+.knowledge .knowledge-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+.knowledge .knowledge-content .know-img1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 100px;
+}
+
+.knowledge .knowledge-content .know-img2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 100px;
+    margin-top: 100px;
+    animation: swing 1.5s infinite;
+}
+
+.knowledge .knowledge-content .know-text p:first-of-type {
+    color: #1CBBB4;
+}
+
+.knowledge .knowledge-content .know-text p:last-of-type {
+    color: #686868;
+    font-style: 16px;
+    margin: 20px 0;
+}
+
+.knowledge .knowledge-content .know-text h2{
+    margin-right: 30px;
+}
+
+.knowledge .knowledge-content .know-text .btn {
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: #ed145b;
+    border: 2px solid #ed145b;
+    transition: all 0.8s;
+    font-size: 14px;
+    align-items: center;
+}
+
+.knowledge .knowledge-content .know-text .btn:hover {
+    background-color: #fff0e5;
+    color: #ed145b;
+    border: 2px solid #ed145b;
+}
+
+.knowledge .knowledge-content .know-item .age-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #1CBBB4;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.knowledge .knowledge-content .know-item {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(12, 20px);
+    gap: 30px;
+}
+
+.knowledge .knowledge-content .know-item .age-item p {
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+}
+
+.knowledge .knowledge-content .know-item .item1 {
+    background-color: #0a6375;
+    grid-column: 1 / 4;
+    grid-row: 3 / 8;
+}
+
+.knowledge .knowledge-content .know-item .item2 {
+    background-color: #1cbbb4;
+    grid-column: 4 / 6;
+    grid-row: 1 / 5;
+}
+
+.knowledge .knowledge-content .know-item .item3 {
+    background-color: #ed145b;
+    grid-column: 4 / 6;
+    grid-row: 5 / 9;
+}
+
+.knowledge .knowledge-content .know-item .item4 {
+    background-color: #f7941e;
+    grid-column: 4 / 2;
+    grid-row: 8 / 12;
+}
+
+.knowledge .knowledge-content .know-item .item5 {
+    background-color: #f7941e;
+    grid-column: 6 / 11;
+    grid-row: 5 / 9;
+}
+
+.knowledge .knowledge-content .know-item .item6 {
+    background-color: #73be48;
+    grid-column: 4 / 6;
+    grid-row: 9 / 13;
+}
+
 /* CLIENT */
 
 .client .client-content .client-text {
@@ -39,7 +166,7 @@
     font-size: 15px;
 }
 
-.client{
+.client {
     padding: 40px 0;
 }
 
@@ -53,8 +180,8 @@
     display: block;
 }
 
-.client .client-content .client-carousel .client-slide > img {
-    width: 70%;       
+.client .client-content .client-carousel .client-slide>img {
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -107,7 +234,7 @@
     width: 100%;
 }
 
-.client .client-content .client-carousel .swiper .swiper-wrapper .swiper-slide .client-allinfo p{
+.client .client-content .client-carousel .swiper .swiper-wrapper .swiper-slide .client-allinfo p {
     color: #686868;
     font-size: 16px;
 }
@@ -383,6 +510,7 @@ footer .footer-info .content2 span {
     font-size: 15px;
 }
 
+/* JS ANIMATION */
 
 .fade-up {
     opacity: 0;
@@ -402,6 +530,7 @@ footer .footer-info .content2 span {
     transform: translateX(-50px);
     transition: all 3s ease;
 }
+
 .fade-left.show {
     opacity: 1;
     transform: translateX(0);
@@ -413,6 +542,7 @@ footer .footer-info .content2 span {
     transform: translateX(50px);
     transition: all 3s ease;
 }
+
 .fade-right.show {
     opacity: 1;
     transform: translateX(0);
