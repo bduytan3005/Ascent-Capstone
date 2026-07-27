@@ -23,7 +23,6 @@ ul{
     list-style:none;
     margin:0;
     padding:0;
-}
 
 /* ===========================
         TOP BAR
@@ -437,6 +436,88 @@ ul{
     font-size:18px;
     font-weight:600;
 }
+
+/* FAQ */
+
+.faq {
+    padding: 0 0 60px 0;
+}
+
+.faq .faq-content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.faq .faq-content .faq-img img{
+    width: 550px;   
+} 
+
+.faq .faq-content .faq-card p{
+    color: #1CBBB4;
+}
+
+.faq .faq-content .faq-card h2{
+    margin: 0px 200px 50px 0;
+}
+
+.faq .faq-content .faq-card{
+    margin-left: 60px ;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .accordion-button .asd button{
+    background-color: #fff1e6;
+    width: 40px;
+    height: 40px;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item{
+    width: 80%;
+    margin-bottom: 30px ;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head button{
+    width: 30px;
+    height: 30px;
+    background-color: #F7941E;
+    box-shadow: none;
+    transition: all 0.5s;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head button:not(.collapsed){
+    background-color: #1cbbb4;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head h4{
+    font-size: 18px;
+    font-weight: 900;
+    margin: 30px;
+    font-family: "Jost", sans-serif;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .collapse .accordion-body{
+    color: #686868;
+}
+
+.accordion-button::after{
+    display: none;
+}
+
+/* PROFESS */
+
+.profess{
+    padding: 60px 0;
+}
+
 
 /* KNOWLEDGE */
 
