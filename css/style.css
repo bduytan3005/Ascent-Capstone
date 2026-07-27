@@ -5,14 +5,20 @@
     font-family: "Nunito", sans-serif;
     list-style: none;
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+.container {
+    padding: 80% auto;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
+.text-content {
+    display: inline;
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+.head-content {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: "Jost", sans-serif;
 }
 
 a{
@@ -435,6 +441,159 @@ ul{
     border-radius:8px;
     font-size:18px;
     font-weight:600;
+}
+
+/* FAQ */
+
+.faq {
+    padding: 0 0 60px 0;
+}
+
+.faq .faq-content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.faq .faq-content .faq-img img{
+    width: 550px;   
+} 
+
+.faq .faq-content .faq-card p{
+    color: #1CBBB4;
+}
+
+.faq .faq-content .faq-card h2{
+    margin: 0px 200px 50px 0;
+}
+
+.faq .faq-content .faq-card{
+    margin-left: 60px ;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .accordion-button .asd button{
+    background-color: #fff1e6;
+    width: 40px;
+    height: 40px;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item{
+    width: 80%;
+    margin-bottom: 30px ;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head button{
+    width: 30px;
+    height: 30px;
+    background-color: #F7941E;
+    box-shadow: none;
+    transition: all 0.5s;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head button:not(.collapsed){
+    background-color: #1cbbb4;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .item-head h4{
+    font-size: 18px;
+    font-weight: 900;
+    margin: 30px;
+    font-family: "Jost", sans-serif;
+}
+
+.faq .faq-content .faq-card .accordion .accordion-item .collapse .accordion-body{
+    color: #686868;
+}
+
+.accordion-button::after{
+    display: none;
+}
+
+/* PROFESS */
+
+.profess{
+    padding: 60px 0;
+}
+
+.profess .profess-content .profess-text p {
+    color: #1CBBB4;
+}
+
+.profess .profess-content .profess-text h2 {
+    padding: 0 400px;
+}
+
+.profess .profess-content .profess-card .card-body h4 {
+    margin: 0;
+}
+
+.profess .profess-content .profess-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 60px ;
+}
+
+.profess .profess-content .profess-card .card {
+
+    border-radius: 40px 10px 40px 10px;
+    padding: 40px;
+    box-shadow:
+        0px 4px 64px -7px rgba(0, 0, 0, 0.1);
+    ;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.profess .profess-content .profess-card .card:hover {
+    border: 2px solid #73be48;
+}
+
+
+.profess .profess-content .profess-card .card-img-top {
+    width: 300px;
+    border-radius: 40px 10px 40px 10px;
+    transition: all 0.5s;
+}
+
+.profess .profess-content .profess-card .card:hover .card-img-top {
+    border-radius: 10px 40px 10px 40px;
+}
+
+.profess .profess-content .profess-card .card-body {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profess .profess-content .profess-card .card-body .card-item ul{
+    display: flex;
+    gap: 15px;
+    padding: 30px 0 0 0 ;
+    margin: 0;
+}
+
+.profess .profess-content .profess-card .card-body .card-item ul li{
+    background-color: #fff1e6;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.profess .profess-content .profess-card .card-body .card-item ul li:hover{
+    background-color: #ed145b;
 }
 
 
