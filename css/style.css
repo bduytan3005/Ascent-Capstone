@@ -21,6 +21,86 @@
     font-family: "Jost", sans-serif;
 }
 
+/* PROFESS */
+
+.profess{
+    padding: 60px 0;
+}
+
+.profess .profess-content .profess-text p {
+    color: #1CBBB4;
+}
+
+.profess .profess-content .profess-text h2 {
+    padding: 0 400px;
+}
+
+.profess .profess-content .profess-card .card-body h4 {
+    margin: 0;
+}
+
+.profess .profess-content .profess-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 60px ;
+}
+
+.profess .profess-content .profess-card .card {
+
+    border-radius: 40px 10px 40px 10px;
+    padding: 40px;
+    box-shadow:
+        0px 4px 64px -7px rgba(0, 0, 0, 0.1);
+    ;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.profess .profess-content .profess-card .card:hover {
+    border: 2px solid #73be48;
+}
+
+
+.profess .profess-content .profess-card .card-img-top {
+    width: 300px;
+    border-radius: 40px 10px 40px 10px;
+    transition: all 0.5s;
+}
+
+.profess .profess-content .profess-card .card:hover .card-img-top {
+    border-radius: 10px 40px 10px 40px;
+}
+
+.profess .profess-content .profess-card .card-body {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profess .profess-content .profess-card .card-body .card-item ul{
+    display: flex;
+    gap: 15px;
+    padding: 30px 0 0 0 ;
+    margin: 0;
+}
+
+.profess .profess-content .profess-card .card-body .card-item ul li{
+    background-color: #fff1e6;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.profess .profess-content .profess-card .card-body .card-item ul li:hover{
+    background-color: #ed145b;
+}
+
+
+
 /* KNOWLEDGE */
 
 .knowledge {
@@ -40,17 +120,17 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
+
 }
 
-.knowledge .knowledge-content .know-img1{
+.knowledge .knowledge-content .know-img1 {
     position: absolute;
     left: 0;
     bottom: 0;
     margin-left: 100px;
 }
 
-.knowledge .knowledge-content .know-img2{
+.knowledge .knowledge-content .know-img2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -69,7 +149,7 @@
     margin: 20px 0;
 }
 
-.knowledge .knowledge-content .know-text h2{
+.knowledge .knowledge-content .know-text h2 {
     margin-right: 30px;
 }
 
