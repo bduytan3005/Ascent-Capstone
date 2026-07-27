@@ -437,27 +437,6 @@ ul{
     font-size:18px;
     font-weight:600;
 }
-/* BOTTOM KIDS */
-.kids{
-    position:absolute;
-    bottom:-10px;
-    right: 60%;
-    width:550px;
-}
-/* SHAPE */
-.shape{
-    position:absolute;
-}
-.shape-left{
-    left:0;
-    top:0;
-}
-.shape-right{
-    right:0;
-    top:0;
-
-}
-
 
 /* KNOWLEDGE */
 
@@ -478,17 +457,17 @@ ul{
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
+
 }
 
-.knowledge .knowledge-content .know-img1{
+.knowledge .knowledge-content .know-img1 {
     position: absolute;
     left: 0;
     bottom: 0;
     margin-left: 100px;
 }
 
-.knowledge .knowledge-content .know-img2{
+.knowledge .knowledge-content .know-img2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -507,7 +486,7 @@ ul{
     margin: 20px 0;
 }
 
-.knowledge .knowledge-content .know-text h2{
+.knowledge .knowledge-content .know-text h2 {
     margin-right: 30px;
 }
 
