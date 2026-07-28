@@ -616,8 +616,6 @@ footer {
     background-color: rgb(82, 182, 82);
 }
 
-
-
 .footer .footer-content .footer-page a {
     display: flex;
     flex-direction: column;
@@ -663,6 +661,18 @@ footer .footer-info .content2 span {
     margin-left: 20px;
     color: black;
     font-size: 15px;
+}
+
+.back-to-top{
+   background-color: #F7941E;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    border: none;
+    margin: 20px;   
+    border-radius: 20px;
 }
 
 /* JS ANIMATION */
