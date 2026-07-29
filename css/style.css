@@ -7,7 +7,9 @@
 }
 
 .container {
-    padding: 80% auto;
+    max-width:1320px;
+    margin:0 auto;
+    padding:0 15px;
 }
 
 .text-content {
@@ -20,6 +22,535 @@
     font-weight: 800;
     font-family: "Jost", sans-serif;
 }
+
+
+.top-header{
+
+    background:#ef1365;
+    padding:15px 0;
+}
+
+.top-content{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top-left,
+.top-right{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.top-left a,
+.top-right a{
+
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.top-left a:hover,
+.top-right a:hover{
+
+    color:#ffd9e6;
+}
+
+/*========================
+          NAVBAR
+=========================*/
+
+header{
+
+    background:#fff;
+    padding:28px 0;
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 60px;
+    height: auto;
+}
+
+.logo span{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+
+/*========================
+          MENU
+=========================*/
+
+.menu{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+    list-style:none;
+
+    margin:0;
+    padding:0;
+}
+
+.menu>li>a{
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:18px;
+    font-weight:600;
+    color:#111;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu>li>a:hover{
+
+    color:#f7931e;
+}
+.menu>li>a i{
+
+    font-size:12px;
+}
+/*========================
+        SUBMENU
+=========================*/
+
+.menu > li{
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 280px;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    z-index: 999;
+}
+
+.menu > li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li{
+    border-bottom: 1px solid #d9e3ef;
+}
+
+.submenu li:last-child{
+    border-bottom: none;
+}
+
+.submenu li a{
+    display: block;
+    padding: 22px 24px;
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.submenu li a:hover{
+    color: #f7931e;
+    padding-left: 34px;
+    background: #fff;
+}
+
+/*========================
+          BUTTON
+=========================*/
+
+.btn-quote{
+    background:#20c7c6;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 36px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-quote:hover{
+    background:#0ea6a5;
+}
+/* ================= HERO ================= */
+
+.hero{
+    position:relative;
+    background:#fff3ea;
+    padding:100px 0;
+    overflow:hidden;
+    z-index:1;
+}
+
+/* LEFT */
+
+.hero-left img{
+    width:100%;
+}
+
+/* RIGHT */
+
+.hero-right img{
+    width:100%;
+}
+
+/* CONTENT */
+
+.hero-content{
+    text-align:center;
+}
+
+.hero-subtitle{
+    color:#1CBBB4;
+    font-size:18px;
+    font-weight:700;
+}
+
+.hero-title{
+    margin:20px 0;
+    font-size:70px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero-title span{
+    color:#ED145B;
+}
+
+.hero-desc{
+    width:80%;
+    margin:0 auto 35px;
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* BUTTON */
+
+.hero-btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:180px;
+    height:60px;
+    border-radius:8px;
+    background:#73BE48;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#ED145B;
+    color:#fff;
+}
+
+
+/* Custom CSS cho Number Talks Section */
+.number-talks-section {
+  background-color: #ffffff;
+}
+
+.section-subtitle {
+  color: #f39c12;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  line-height: 1.25;
+}
+
+.section-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Button "Get a quote" */
+.btn-quote {
+  color: #333;
+  border: 1px solid #e0e0e0;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-quote:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+  color: #000;
+}
+
+/* Thẻ thống kê (Stat Card) */
+.stat-card {
+  border: 1px solid #eef2f5;
+  border-radius: 12px;
+  padding: 24px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+}
+
+/* Icon tròn */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+/* Màu icon */
+.icon-box.bg-orange { background-color: #ff9800; }
+.icon-box.bg-pink   { background-color: #e91e63; }
+.icon-box.bg-green  { background-color: #7cb342; }
+.icon-box.bg-teal   { background-color: #00bcd4; }
+
+/* Custom CSS cho About Us Section (Phiên bản gọn hơn) */
+.about-section {
+  background-color: #ffffff;
+}
+
+/* Subtitle màu Teal/Xanh ngọc */
+.section-subtitle-teal {
+  color: #00bcd4;
+  font-size: 0.85rem; /* Nhỏ hơn một chút */
+  letter-spacing: 0.5px;
+}
+
+/* Tùy chỉnh màu chữ Teal */
+.text-teal {
+  color: #00bcd4;
+}
+
+/* Các kích thước chữ nhỏ bổ sung */
+.fs-7 {
+  font-size: 0.8rem;
+}
+.fs-8 {
+  font-size: 0.7rem;
+}
+
+/* Định vị hình ảnh & Floating Badges */
+.about-image-wrapper {
+  padding-right: 40px; /* Giảm không gian cho badge đè ra ngoài ảnh */
+}
+
+.main-img-box img {
+  max-height: 380px; /* Giảm chiều cao tối đa của ảnh */
+  border-radius: 12px; /* Bo góc nhỏ hơn */
+}
+
+/* Nét vẽ đè trên góc ảnh */
+.doodle-arrow {
+  top: -20px; /* Di chuyển gần hơn */
+  left: -15px;
+  z-index: 2;
+}
+
+/* Base style cho các badge nổi (Kích thước nhỏ hơn) */
+.badge-card {
+  width: 110px; /* Giảm độ rộng của thẻ nổi */
+  z-index: 3;
+}
+
+/* Badge trên màu kem (Cân chỉnh lại vị trí) */
+.badge-academy {
+  background-color: #fdf3e7;
+  top: 30%; /* Điều chỉnh độ cao */
+  right: 0;
+}
+
+/* Badge dưới màu trắng có đổ bóng (Cân chỉnh lại vị trí) */
+.badge-experience {
+  bottom: 12%; /* Điều chỉnh độ cao */
+  right: 0;
+}
+
+/* Kích thước số cho thẻ kinh nghiệm */
+.badge-experience h5 {
+    font-size: 1.25rem;
+}
+
+/* ==========================================
+   COMMON & UTILITIES
+=========================================== */
+.text-green { color: #8bc34a; }
+.text-teal  { color: #00bcd4; }
+.fs-7 { font-size: 0.85rem; }
+.fs-8 { font-size: 0.75rem; }
+
+.hover-teal:hover {
+  color: #00bcd4 !important;
+}
+
+/* Icon box nền xám nhạt */
+.icon-box-light {
+  width: 50px;
+  height: 50px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================
+   SECTION 1: EDUCATIONAL PROGRAMS
+=========================================== */
+.program-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-color: #f0f0f0 !important;
+}
+.program-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+
+/* Định vị hình bé cưỡi bút chì */
+.mascot-pencil {
+  top: 10px;
+  right: -20px;
+  width: 220px;
+  z-index: 1;
+}
+
+/* ==========================================
+   SECTION 2: GALLERY / EXPLORING MINDS
+=========================================== */
+.btn-filter {
+  border: 1px solid #eee;
+  color: #666;
+  padding: 6px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+  background-color: #ff9800;
+  color: #fff;
+  border-color: #ff9800;
+}
+
+.gallery-img-box img {
+  transition: transform 0.3s ease;
+}
+.gallery-img-box:hover img {
+  transform: scale(1.03);
+}
+
+/* ==========================================
+   SECTION 3: LATEST SERVICE
+=========================================== */
+/* Mascot cậu bé đứng bên trái */
+.mascot-boy {
+  left: -80px;
+  bottom: -40px;
+  width: 160px;
+  z-index: 2;
+}
+
+/* Nút indicator dạng gạch ngang */
+.dot {
+  width: 16px;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  display: inline-block;
+}
+.dot.active {
+  background-color: #00bcd4;
+  width: 24px;
+}
+
+/* Nút Read More viền xanh ngọc */
+.btn-outline-teal {
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.btn-outline-teal:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* Background màu kem của banner bên phải */
+.service-banner-bg {
+  background-color: #fff6ee;
+}
+/* Tương thích responsive di động */
+@media (max-width: 991.98px) {
+  .about-image-wrapper {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .badge-academy {
+    right: 5px; /* Giảm khoảng cách */
+  }
+  
+  .badge-experience {
+    right: 5px; /* Giảm khoảng cách */
+  }
+}
+
 
 /* FAQ */
 
@@ -286,9 +817,9 @@
 }
 
 .knowledge .knowledge-content .know-item .item4 {
-    background-color: #f7941e;
-    grid-column: 4 / 2;
-    grid-row: 8 / 12;
+    background-color:#f7941e;
+    grid-column:2 / 4;
+    grid-row:8 / 12;
 }
 
 .knowledge .knowledge-content .know-item .item5 {
